@@ -1,13 +1,61 @@
-user_input = input("Enter numbers separated by comma: ")
+lst = [0, 1, 0, 12, 3]
 
-list = user_input.split(',')
-if len(list) == 1 and list[0] == '':
-    first_half = []
-    second_half = []
-else:
-    middle = len(list) // 2
-    first_half = list[:middle + len(list) % 2]
-    second_half = list[middle + len(list) % 2:]
+non_zero = []
+zero = []
 
-print("First list :", first_half)
-print("Second list :", second_half)
+for i in lst:
+    if i != 0:
+        non_zero.append(i)
+    else:
+        zero.append(0)
+result = non_zero + zero
+print(result)
+
+
+
+lst = [0]
+
+non_zero = []
+zero = []
+
+for i in lst:
+    if i != 0:
+        non_zero.append(i)
+    else:
+        zero.append(0)
+result = non_zero + zero
+print(result)
+
+
+lst = [1, 0, 13, 0, 0, 0, 5]
+
+non_zero = []
+zero = []
+
+for i in lst:
+    if i != 0:
+        non_zero.append(i)
+    else:
+        zero.append(0)
+result = non_zero + zero
+print(result)
+
+
+
+lst = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+
+non_zero = []
+zero = []
+
+for i in lst:
+    if i != 0:
+        non_zero.append(i)
+    else:
+        zero.append(0)
+result = non_zero + zero
+print(result)
+
+
+
+
+
