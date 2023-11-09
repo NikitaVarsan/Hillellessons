@@ -1,12 +1,26 @@
-number = int(input("Enter a 4 digit number: "))
+lst = [12, 3, 4, 10]
+if len(lst) > 1:
+    last_element = lst.pop()
+    lst.insert(0, last_element)
+print(lst)
 
 
-first_num = number // 1000
-second_num = (number % 1000) // 100
-third_num = (number % 100) // 10
-fourth_num = number % 10
+lst = [1]
+if len(lst) > 1:
+    last_element = lst.pop()
+    lst.insert(0, last_element)
+print(lst)
 
-print(first_num)
-print(second_num)
-print(third_num)
-print(fourth_num)
+
+lst = []
+if len(lst) > 1:
+    last_element = lst.pop()
+    lst.insert(0, last_element)
+print(lst)
+
+lst = [12, 3, 4, 10, 8]
+if len(lst) > 1:
+    last_element = lst.pop()
+    lst.insert(0, last_element)
+
+print(lst)
