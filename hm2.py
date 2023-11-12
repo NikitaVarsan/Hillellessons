@@ -1,61 +1,24 @@
-lst = [0, 1, 0, 12, 3]
+while True:
+    first_num = int(input("Enter first number: "))
+    second_num = int(input("Enter second number: "))
+    Action = input("Enter Action: ")
 
-non_zero = []
-zero = []
+    if Action == "+":
+        print(first_num + second_num)
+    elif Action == "-":
+        print(first_num - second_num)
+    elif Action == "*":
+        print(first_num * second_num)
+    elif Action == "/":
+        if second_num == 0:
+            print("You can't divide by 0")
+        else:
+            print(first_num / second_num)
 
-for i in lst:
-    if i != 0:
-        non_zero.append(i)
-    else:
-        zero.append(0)
-result = non_zero + zero
-print(result)
-
-
-
-lst = [0]
-
-non_zero = []
-zero = []
-
-for i in lst:
-    if i != 0:
-        non_zero.append(i)
-    else:
-        zero.append(0)
-result = non_zero + zero
-print(result)
-
-
-lst = [1, 0, 13, 0, 0, 0, 5]
-
-non_zero = []
-zero = []
-
-for i in lst:
-    if i != 0:
-        non_zero.append(i)
-    else:
-        zero.append(0)
-result = non_zero + zero
-print(result)
-
-
-
-lst = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
-
-non_zero = []
-zero = []
-
-for i in lst:
-    if i != 0:
-        non_zero.append(i)
-    else:
-        zero.append(0)
-result = non_zero + zero
-print(result)
-
-
+    question = input("Do you want to continue (yes/no): ")
+    if question != "yes":
+        print("Have a nice day!!!!!")
+        break
 
 
 
